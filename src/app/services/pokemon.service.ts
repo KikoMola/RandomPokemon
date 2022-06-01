@@ -12,4 +12,8 @@ export class PokemonService {
   getRandomPokemon(id: number) {
     return this.http.get(`https://pokeapi.co/api/v2/pokemon/${id}`);
   }
+
+  getPokemonList() {
+    return this.http.get('https://pokeapi.co/api/v2/pokemon/?limit=807');
+  }
 }
